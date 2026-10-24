@@ -45,7 +45,8 @@
       "role": "Narrower banner export for the project description",
       "source": "spellclarity-banner.png",
       "method": "Proportional resize to 800 pixels wide with sharp; complete original composition preserved without cropping",
-      "alt": "SpellClarity in gold lettering beside its gold tooltip and cyan spell-spark emblem on a dark blue background."
+      "alt": "SpellClarity in gold lettering beside its gold tooltip and cyan spell-spark emblem on a dark blue background.",
+      "owner_approval": "Accepted in chat on 2026-10-24; does not authorize release publication"
     }
   ]
 }

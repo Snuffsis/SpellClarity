@@ -60,7 +60,7 @@ surface and expect it to render. The short Summary text is separate.
 
 ## Publishing status
 
-GitHub repository bootstrap still awaits the one-time approval recorded in
-Docs/GitWorkflow.md. Review/merge, client acceptance and release publication remain
+The owner approved the 800-pixel banner and the one-time GitHub baseline upload
+on 2026-10-24; the baseline is now on master, as recorded in Docs/GitWorkflow.md. Review/merge, client acceptance and release publication remain
 separate decisions. These branding files stay out of the addon ZIP; the updated
 text-only README is included. No runtime test is established by these images.

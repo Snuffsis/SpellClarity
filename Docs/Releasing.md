@@ -7,8 +7,8 @@ Development tools, Git metadata, tests and saved player data are excluded.
 ## Complete once before publishing
 
 1. GitHub: [Snuffsis/SpellClarity](https://github.com/Snuffsis/SpellClarity), public
-   and currently empty. Approve the one-time initial baseline `2e8d04e` upload,
-   then push the preparation branch and review its PR to master.
+   with approved baseline `2e8d04e` uploaded to `master` on 2026-10-24.
+   Review the preparation branch PR before merging or publishing.
 2. The owner supplied CurseForge project **1763928**, slug **spellclarity**:
    [project preview](https://www.curseforge.com/wow/addons/spellclarity/preview).
    Its ID/slug are set in `release/config.json`. The owner preview was verified
@@ -17,8 +17,9 @@ Development tools, Git metadata, tests and saved player data are excluded.
    preserves that choice; spell data source attribution remains in
    `spell-data-sources.json`. Publication rejects a missing or empty LICENSE.
    No unrelated Aevum artwork or artwork licenses are included.
-4. Configure GitHub secret `CF_API_TOKEN` in repository settings. Never paste it
-   into source or chat. Set variable `CURSEFORGE_PUBLISH_ENABLED=true` only when ready.
+4. The owner confirmed that repository secret `CF_API_TOKEN` was configured on
+   2026-10-24. Its value has not been read or copied. Set repository variable
+   `CURSEFORGE_PUBLISH_ENABLED=true` only when publication is explicitly authorized.
    Keep CurseForge's separate repository packager disabled to avoid duplicate uploads.
 5. Confirm the intended client mapping: 1.60.1, Interface 16001, candidate CurseForge
    version ID 17053 (inherited from Aevum). The uploader checks the ID/name against

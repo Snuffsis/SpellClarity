@@ -58,6 +58,7 @@ python dev/ci.py
 
 Paketet skapas som `dist/release/SpellClarity-0.1.0-beta.zip`. Tester laddar
 addonets faktiska TOC utan Aevum och verifierar även det paketerade innehållet.
-Speltest, första GitHub-uppladdningen och publiceringsnyckel återstår före publicering.
+GitHub-basversionen är uppladdad och ägaren har bekräftat publiceringsnyckeln.
+PR-granskning, speltest och uttryckligt releasegodkännande återstår före publicering.
 Licensen är All Rights Reserved, samma som det befintliga CurseForge-projektet.
 CurseForge-projektet är 1763928 (spellclarity).

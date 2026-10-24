@@ -33,16 +33,17 @@ diverged checkout or leave only a secondary development checkout up to date.
 
 ## Initial preparation, 2026-10-24
 
-The owner supplied [Snuffsis/SpellClarity](https://github.com/Snuffsis/SpellClarity).
-It is public, has default branch `master`, and has no commits yet. The local
-`master` reference is the imported standalone source snapshot `2e8d04e`.
-`feature/standalone-release` contains the independent project preparation.
-No remote master has been pushed and no release has been published.
+The owner supplied [Snuffsis/SpellClarity](https://github.com/Snuffsis/SpellClarity),
+a public repository with default branch `master`. It was initially empty.
+On 2026-10-24 the owner explicitly approved uploading the exact imported baseline
+`2e8d04eda027ec2178c99c67f00986158ca44fc7` to `master`, then pushing the preparation
+branch and opening its PR. That baseline has now been uploaded and verified on
+`origin/master`. No release has been published.
 
-Initially uploading this baseline to the existing repository requires an
-explicit one-time bootstrap decision, as for Aevum. That exception must identify
-the exact baseline; it never authorizes later direct pushes. After bootstrap,
-fetch origin, push the feature branch and open its PR targeting master.
+`feature/standalone-release` contains the independent project preparation,
+release tooling, documentation and branding. The one-time bootstrap authorization
+is exhausted; all subsequent changes follow the PR workflow. Approval to push
+and open this PR is not approval to merge it or publish a release.
 
 The initial installation is the requested unmerged playtest. Runtime function
 bodies are unchanged from the imported Aevum revision; only source-header comments
