@@ -1,0 +1,26 @@
+{
+  "build": "1.60.1.70338",
+  "spells": 6372,
+  "sources": {
+    "SpellEffect": {
+      "url": "https://wago.tools/db2/SpellEffect/csv?build=1.60.1.70338",
+      "sha256": "7d14075e4444dbd364be9943ad9b90872275da2b1c1f63f39b5cf3da9b5e3f80"
+    },
+    "SpellLevels": {
+      "url": "https://wago.tools/db2/SpellLevels/csv?build=1.60.1.70338",
+      "sha256": "1c73c66b290df58a86ffc854838353a7b9c85d400c65a1843345bc826afe12aa"
+    },
+    "SpellMisc": {
+      "url": "https://wago.tools/db2/SpellMisc/csv?build=1.60.1.70338",
+      "sha256": "f5899d87d339d3765495c06b84de930ac2d6601fbc4c59ab4be475046a658843"
+    },
+    "SpellDuration": {
+      "url": "https://wago.tools/db2/SpellDuration/csv?build=1.60.1.70338",
+      "sha256": "d9fa937198af50078566e65ca449f555baccd35e1d25d00090b52c709b3f74c5"
+    },
+    "SkillLineAbility": {
+      "url": "https://wago.tools/db2/SkillLineAbility/csv?build=1.60.1.70338",
+      "sha256": "05c88213477aae7b8e3fed9c710d61ead0b6a6011e76499f576acdb2b398fe9b"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+## Interface: 16001
+## Title: SpellClarity
+## Notes: Compact equipment bonuses, comparison stats and Shift spell details. Standalone.
+## Author: Jimmy / OpenAI
+## Version: 0.1.0-beta
+## SavedVariables: SpellClarityDB
+
+Bootstrap.lua
+Locale.lua
+Format.lua
+SpellData.lua
+SpellDetails.lua
+NativeTooltips.lua
+Main.lua
