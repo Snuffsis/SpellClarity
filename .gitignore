@@ -1,0 +1,26 @@
+# Generated previews, packages and Python caches
+__pycache__/
+*.py[cod]
+/dev/previews/
+/Previews/
+/Backups/
+/dist/
+*.zip
+*.log
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Local credentials and game settings never belong in the addon source
+.env
+.env.*
+!.env.example
+/WTF/
+/SavedVariables/
+*.bak

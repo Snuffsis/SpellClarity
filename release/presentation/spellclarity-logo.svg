@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254" role="img" aria-labelledby="title description">
+  <title id="title">SpellClarity</title>
+  <desc id="description">A gold tooltip frame with a cyan four-point spell spark and two gold text lines on a midnight-blue background.</desc>
+  <!-- Editable vector reconstruction of the approved visual direction. No embedded raster images or external resources. -->
+  <defs>
+    <radialGradient id="background" cx="50%" cy="43%" r="72%">
+      <stop stop-color="#0b2a43"/>
+      <stop offset=".55" stop-color="#061a2c"/>
+      <stop offset="1" stop-color="#020b15"/>
+    </radialGradient>
+    <radialGradient id="panel" cx="50%" cy="37%" r="75%">
+      <stop stop-color="#0c304b"/>
+      <stop offset=".58" stop-color="#071d30"/>
+      <stop offset="1" stop-color="#020d19"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="160" x2="0" y2="1130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff3b3"/>
+      <stop offset=".035" stop-color="#f7d470"/>
+      <stop offset=".13" stop-color="#b77c22"/>
+      <stop offset=".23" stop-color="#f8d476"/>
+      <stop offset=".49" stop-color="#d59c35"/>
+      <stop offset=".7" stop-color="#f6d273"/>
+      <stop offset=".86" stop-color="#af711b"/>
+      <stop offset="1" stop-color="#e8b650"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="260" y1="165" x2="1000" y2="1060" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff8cd"/>
+      <stop offset=".22" stop-color="#e7b54e"/>
+      <stop offset=".47" stop-color="#ffec9b"/>
+      <stop offset=".75" stop-color="#a36918"/>
+      <stop offset="1" stop-color="#e9b34a"/>
+    </linearGradient>
+    <linearGradient id="bevel" x1="0" y1="160" x2="0" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff8c5"/>
+      <stop offset=".15" stop-color="#ffdf82"/>
+      <stop offset=".45" stop-color="#b87f24"/>
+      <stop offset=".75" stop-color="#ffecaa"/>
+      <stop offset="1" stop-color="#75440d"/>
+    </linearGradient>
+    <linearGradient id="barGold" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#fff4ba"/>
+      <stop offset=".12" stop-color="#f9d372"/>
+      <stop offset=".3" stop-color="#d9a03a"/>
+      <stop offset=".73" stop-color="#d9a03a"/>
+      <stop offset=".91" stop-color="#ab6d16"/>
+      <stop offset="1" stop-color="#f2c768"/>
+    </linearGradient>
+    <radialGradient id="aura">
+      <stop stop-color="#39ceff" stop-opacity=".4"/>
+      <stop offset=".35" stop-color="#16bdf9" stop-opacity=".23"/>
+      <stop offset=".65" stop-color="#079cdb" stop-opacity=".09"/>
+      <stop offset="1" stop-color="#079cdb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sparkFill" cx="50%" cy="53%" r="61%">
+      <stop stop-color="#fff"/>
+      <stop offset=".22" stop-color="#e0fcff"/>
+      <stop offset=".5" stop-color="#75e4ff"/>
+      <stop offset=".77" stop-color="#26c1ed"/>
+      <stop offset="1" stop-color="#b8f6ff"/>
+    </radialGradient>
+    <linearGradient id="facetBlue" x1="627" y1="270" x2="627" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9aeeff"/>
+      <stop offset=".48" stop-color="#1caee0"/>
+      <stop offset="1" stop-color="#74e8ff"/>
+    </linearGradient>
+    <path id="outerFrame" d="M330 160H925C1017 160 1073 219 1073 312V850C1073 941 1023 996 931 996H429L241 1122Q217 1135 221 1107L244 965C203 940 180 903 180 851V310C180 216 235 160 330 160Z"/>
+    <path id="innerFrame" d="M330 230H925C976 230 1002 258 1002 312V850C1002 901 977 928 931 928H422Q413 928 405 934L288 1023L306 928Q310 917 298 907C265 885 250 871 250 850V310C250 256 278 230 330 230Z"/>
+    <path id="frameRing" fill-rule="evenodd" d="M330 160H925C1017 160 1073 219 1073 312V850C1073 941 1023 996 931 996H429L241 1122Q217 1135 221 1107L244 965C203 940 180 903 180 851V310C180 216 235 160 330 160Z M330 230H925C976 230 1002 258 1002 312V850C1002 901 977 928 931 928H422Q413 928 405 934L288 1023L306 928Q310 917 298 907C265 885 250 871 250 850V310C250 256 278 230 330 230Z"/>
+    <clipPath id="frameClip"><use href="#frameRing" clip-rule="evenodd"/></clipPath>
+    <path id="spark" d="M627 250C605 438 570 479 365 510C569 525 604 550 627 728C648 554 679 531 890 510C685 486 651 448 627 250Z"/>
+  </defs>
+
+  <rect width="1254" height="1254" fill="url(#background)"/>
+  <use href="#outerFrame" fill="#000" opacity=".35" transform="translate(0 15)"/>
+  <use href="#outerFrame" fill="#53300b" stroke="#53300b" stroke-width="6" transform="translate(0 5)"/>
+  <use href="#innerFrame" fill="url(#panel)" stroke="#030d16" stroke-width="15"/>
+  <use href="#frameRing" fill="url(#gold)"/>
+
+  <!-- Broad beveled faces stay editable and resolution-independent. -->
+  <g clip-path="url(#frameClip)">
+    <path d="M180 320L250 265L322 160L344 230H941L930 160H1080V316L1002 270L978 230H281L250 268V881L180 837Z" fill="#fff1a8" opacity=".3"/>
+    <path d="M930 160L1002 270L1075 327L1062 228Z M998 863L1073 896L1015 993L931 996L904 928Z M244 965L306 928L288 1023L221 1122Z" fill="#8e570d" opacity=".42"/>
+    <path d="M180 310L195 296V848Q195 909 264 952L238 1104L281 1025L290 928Q235 898 235 850V310Q235 211 330 211H932Q1005 211 1038 281L1073 312Q1063 167 925 167H330Q186 167 180 310Z" fill="#ffdd78" opacity=".25"/>
+    <path d="M415 936H934Q997 936 1010 871L1042 886Q1028 977 931 977H421L238 1104L286 1041Z" fill="#ffedaa" opacity=".26"/>
+  </g>
+  <use href="#outerFrame" fill="none" stroke="url(#edge)" stroke-width="3"/>
+  <path d="M329 169H926Q1059 169 1063 312M190 318V848Q190 914 255 955L232 1112L424 984H932Q1063 984 1063 850V317" fill="none" stroke="url(#bevel)" stroke-width="3" stroke-linejoin="round"/>
+  <use href="#innerFrame" fill="none" stroke="#845216" stroke-width="7"/>
+  <use href="#innerFrame" fill="none" stroke="url(#bevel)" stroke-width="3"/>
+  <path d="M322 164H926" fill="none" stroke="#fff9d7" stroke-width="4" stroke-linecap="round" opacity=".85"/>
+
+  <ellipse cx="627" cy="510" rx="333" ry="318" fill="url(#aura)"/>
+  <ellipse cx="627" cy="510" rx="245" ry="220" fill="url(#aura)"/>
+  <use href="#spark" fill="url(#sparkFill)" stroke="#b7f5ff" stroke-width="2"/>
+  <path d="M627 250C612 409 601 469 627 510C656 460 645 408 627 250Z" fill="#c9faff" opacity=".8"/>
+  <path d="M627 250C605 438 570 479 365 510L627 510C585 483 609 410 627 250Z" fill="url(#facetBlue)" opacity=".72"/>
+  <path d="M365 510C569 525 604 550 627 728L627 510C576 545 521 516 365 510Z" fill="#1cb8eb" opacity=".75"/>
+  <path d="M627 728C648 554 679 531 890 510L627 510C670 550 641 622 627 728Z" fill="#31c2eb" opacity=".65"/>
+  <path d="M890 510C685 486 651 448 627 250L627 510C670 470 716 506 890 510Z" fill="#9aefff" opacity=".48"/>
+  <path d="M627 250C619 451 596 484 365 510C598 509 620 535 627 728C637 537 661 513 890 510C661 500 635 463 627 250Z" fill="#edfdff"/>
+  <path d="M627 250L627 728M365 510H890" fill="none" stroke="#fff" stroke-width="1.7" opacity=".7"/>
+  <path d="M627 421C613 489 596 502 530 510C597 518 615 531 627 597C640 532 654 517 723 510C654 500 640 489 627 421Z" fill="#fff" opacity=".87"/>
+
+  <g stroke-linejoin="round">
+    <rect x="343" y="739" width="568" height="55" rx="28" fill="#000" opacity=".28"/>
+    <rect x="343" y="729" width="568" height="55" rx="28" fill="url(#barGold)" stroke="#925e18" stroke-width="3"/>
+    <rect x="348" y="733" width="558" height="44" rx="22" fill="none" stroke="#f9dc8a" stroke-width="2"/>
+    <path d="M369 733H885" fill="none" stroke="#fff5c8" stroke-width="4" stroke-linecap="round"/>
+    <rect x="343" y="833" width="449" height="48" rx="24" fill="#000" opacity=".28"/>
+    <rect x="343" y="822" width="449" height="48" rx="24" fill="url(#barGold)" stroke="#925e18" stroke-width="3"/>
+    <rect x="348" y="826" width="439" height="37" rx="19" fill="none" stroke="#f9dc8a" stroke-width="2"/>
+    <path d="M367 826H768" fill="none" stroke="#fff5c8" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

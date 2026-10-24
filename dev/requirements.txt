@@ -1,0 +1,2 @@
+# Optional local Lua 5.1 runtime when lua5.1 is not installed.
+lupa==2.6

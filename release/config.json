@@ -1,0 +1,13 @@
+{
+  "game_versions": [
+    {
+      "id": 17053,
+      "name": "1.60.1",
+      "interface": 16001
+    }
+  ],
+  "project": {
+    "id": 1763928,
+    "slug": "spellclarity"
+  }
+}

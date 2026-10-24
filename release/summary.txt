@@ -1,0 +1,1 @@
+Clearer equipment tooltips and Shift spell details: see base values, spell power bonuses and coefficients while keeping the game's original look.
