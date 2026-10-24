@@ -37,6 +37,15 @@
       "role": "Raster preview of the SVG master",
       "source": "spellclarity-logo.svg",
       "method": "Rendered directly from the SVG with sharp; no changes to the original generated PNG"
+    },
+    {
+      "file": "spellclarity-banner-800.png",
+      "width": 800,
+      "height": 267,
+      "role": "Narrower banner export for the project description",
+      "source": "spellclarity-banner.png",
+      "method": "Proportional resize to 800 pixels wide with sharp; complete original composition preserved without cropping",
+      "alt": "SpellClarity in gold lettering beside its gold tooltip and cyan spell-spark emblem on a dark blue background."
     }
   ]
 }

@@ -9,7 +9,8 @@ review. Assets have not been published and do not change the addon runtime.
 | [spellclarity-logo.svg](spellclarity-logo.svg) | Editable vector logo master | Scalable; viewBox 0 0 1254 1254 |
 | [spellclarity-logo-vector-preview.png](spellclarity-logo-vector-preview.png) | Preview rendered from the SVG | 800 × 800 px |
 | [spellclarity-logo.png](spellclarity-logo.png) | Original generated reference, preserved | 1254 × 1254 px |
-| [spellclarity-banner.png](spellclarity-banner.png) | Horizontal project banner | 2172 × 724 px |
+| [spellclarity-banner-800.png](spellclarity-banner-800.png) | Banner for the project description | 800 × 267 px |
+| [spellclarity-banner.png](spellclarity-banner.png) | Full-resolution banner source | 2172 × 724 px |
 | [../summary.txt](../summary.txt) | English Summary field, 145 characters | Plain text |
 | [../description.md](../description.md) | Full English project description | Markdown |
 | [../../README.md](../../README.md) | GitHub README, identical to the full description | Markdown |
@@ -24,7 +25,7 @@ The banner was generated using the logo as its identity reference.
 
 The original logo PNG and banner PNG were created with the built-in image_gen tool. The full prompts are
 preserved in artwork.json. Dimensions above were read from the actual PNGs; they
-are full-resolution generated originals, not smaller upload exports. The requested
+include both full-resolution originals and the smaller description export. The requested
 1024-pixel logo was returned at 1254 pixels. No third-party game screenshots,
 artwork or existing Aevum logo were used as image inputs.
 
@@ -40,15 +41,16 @@ this SVG and is not a reference embedded inside it.
 ## Placement
 
 Use the SVG master where SVG is supported. For upload fields requiring a raster
-image, export a square PNG from that master; the included preview is one such export. Put the banner above the
+image, export a square PNG from that master; the included preview is one such export. Put `spellclarity-banner-800.png` above the
 long description on the project page. In a GitHub README, its repository-relative
-path is `release/presentation/spellclarity-banner.png` once the artwork is approved
+path is `release/presentation/spellclarity-banner-800.png` once the artwork is approved
 and uploaded. The text-only README is kept identical to the CurseForge description
 and remains self-contained inside the addon ZIP.
 
 For CurseForge, upload the artwork with its image controls and check the current
 editor's file/dimension limits. The earlier Aevum description editor required an
-image narrower than 850 pixels, so a smaller banner export may be needed at upload.
+image narrower than 850 pixels; use the new 800 × 267 export for the description.
+It preserves the complete original composition, with no cropping or content changes.
 Do not paste a local filesystem path as a public image URL. No uploaded image URL
 has been invented, and the current CurseForge logo/description have not been replaced.
 
