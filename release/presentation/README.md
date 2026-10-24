@@ -1,11 +1,14 @@
 # SpellClarity presentation assets
 
-Prepared on 2026-10-24. These are proposed project assets, not yet published or
-owner-approved. They do not change the addon runtime or its in-game appearance.
+Prepared on 2026-10-24. The owner accepted the logo visual direction and requested
+SVG format. The SVG is the editable logo master; its reconstruction awaits visual
+review. Assets have not been published and do not change the addon runtime.
 
 | File | Purpose | Actual dimensions |
 | --- | --- | --- |
-| [spellclarity-logo.png](spellclarity-logo.png) | Square project logo | 1254 × 1254 px |
+| [spellclarity-logo.svg](spellclarity-logo.svg) | Editable vector logo master | Scalable; viewBox 0 0 1254 1254 |
+| [spellclarity-logo-vector-preview.png](spellclarity-logo-vector-preview.png) | Preview rendered from the SVG | 800 × 800 px |
+| [spellclarity-logo.png](spellclarity-logo.png) | Original generated reference, preserved | 1254 × 1254 px |
 | [spellclarity-banner.png](spellclarity-banner.png) | Horizontal project banner | 2172 × 724 px |
 | [../summary.txt](../summary.txt) | English Summary field, 145 characters | Plain text |
 | [../description.md](../description.md) | Full English project description | Markdown |
@@ -19,15 +22,25 @@ lines. The shape connects spell information with readable tooltips. A dark blue
 background and warm gold wordmark give the two assets a consistent fantasy style.
 The banner was generated using the logo as its identity reference.
 
-Both PNGs were created with the built-in image_gen tool. The full prompts are
+The original logo PNG and banner PNG were created with the built-in image_gen tool. The full prompts are
 preserved in artwork.json. Dimensions above were read from the actual PNGs; they
 are full-resolution generated originals, not smaller upload exports. The requested
 1024-pixel logo was returned at 1254 pixels. No third-party game screenshots,
 artwork or existing Aevum logo were used as image inputs.
 
+## SVG master
+
+`spellclarity-logo.svg` reconstructs the accepted emblem using editable paths,
+rounded rectangles and gradients. The broad silhouette, colors, speech pointer,
+spark and two text lines follow the reference. Fine raster grain is replaced by
+smooth vector surfaces. There are no embedded images, external resources, fonts,
+scripts or raster filters. `spellclarity-logo-vector-preview.png` is rendered from
+this SVG and is not a reference embedded inside it.
+
 ## Placement
 
-Use the square logo for the CurseForge project image. Put the banner above the
+Use the SVG master where SVG is supported. For upload fields requiring a raster
+image, export a square PNG from that master; the included preview is one such export. Put the banner above the
 long description on the project page. In a GitHub README, its repository-relative
 path is `release/presentation/spellclarity-banner.png` once the artwork is approved
 and uploaded. The text-only README is kept identical to the CurseForge description
