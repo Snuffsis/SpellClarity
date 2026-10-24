@@ -6,14 +6,17 @@ Development tools, Git metadata, tests and saved player data are excluded.
 
 ## Complete once before publishing
 
-1. Create/confirm the GitHub repository and approve the exact initial baseline upload.
-   Push the preparation branch and review its PR to master; do not publish from it.
-2. Create/confirm the CurseForge project. Put its actual project ID and slug in
-   `release/config.json` through a PR. They are deliberately null now.
-3. Choose the distribution license with the owner, add its real text as root
-   `LICENSE`, and select the matching license on CurseForge. No license has been
-   invented or inherited from unrelated Aevum artwork. Publication rejects a missing
-   or empty LICENSE. Spell data source attribution remains in spell-data-sources.json.
+1. GitHub: [Snuffsis/SpellClarity](https://github.com/Snuffsis/SpellClarity), public
+   and currently empty. Approve the one-time initial baseline `2e8d04e` upload,
+   then push the preparation branch and review its PR to master.
+2. The owner supplied CurseForge project **1763928**, slug **spellclarity**:
+   [project preview](https://www.curseforge.com/wow/addons/spellclarity/preview).
+   Its ID/slug are set in `release/config.json`. The owner preview was verified
+   on 2026-10-24: new/unlisted project, awaiting moderator approval, no files.
+3. The existing CurseForge project selects **All Rights Reserved**. Root `LICENSE`
+   preserves that choice; spell data source attribution remains in
+   `spell-data-sources.json`. Publication rejects a missing or empty LICENSE.
+   No unrelated Aevum artwork or artwork licenses are included.
 4. Configure GitHub secret `CF_API_TOKEN` in repository settings. Never paste it
    into source or chat. Set variable `CURSEFORGE_PUBLISH_ENABLED=true` only when ready.
    Keep CurseForge's separate repository packager disabled to avoid duplicate uploads.

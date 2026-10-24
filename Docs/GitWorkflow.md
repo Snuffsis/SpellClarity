@@ -33,12 +33,13 @@ diverged checkout or leave only a secondary development checkout up to date.
 
 ## Initial preparation, 2026-10-24
 
-No accessible `Snuffsis/SpellClarity` repository was found. The local `master`
-reference contains only the imported, existing standalone source snapshot.
+The owner supplied [Snuffsis/SpellClarity](https://github.com/Snuffsis/SpellClarity).
+It is public, has default branch `master`, and has no commits yet. The local
+`master` reference is the imported standalone source snapshot `2e8d04e`.
 `feature/standalone-release` contains the independent project preparation.
 No remote master has been pushed and no release has been published.
 
-Creating a new GitHub repository and initially uploading this baseline requires an
+Initially uploading this baseline to the existing repository requires an
 explicit one-time bootstrap decision, as for Aevum. That exception must identify
 the exact baseline; it never authorizes later direct pushes. After bootstrap,
 fetch origin, push the feature branch and open its PR targeting master.

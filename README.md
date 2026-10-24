@@ -45,5 +45,5 @@ checks. CI runs Lua 5.1 directly. Tests exercise the actual independent TOC and
 packaged runtime. The ZIP, build report and SHA256SUMS are in `dist/release/`.
 
 The project is prepared for review, not publicly released. In-game acceptance,
-repository bootstrap, CurseForge project configuration and an owner-selected
-distribution license remain pending. No license grant is implied by this import.
+initial GitHub upload and CurseForge publishing credentials remain pending.
+The license is All Rights Reserved, matching the existing CurseForge project.
