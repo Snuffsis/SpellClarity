@@ -1,4 +1,4 @@
--- Exported by dev/build_spellclarity.py; update the maintained source first.
+-- Imported from Aevum; maintained independently here. See UPSTREAM.md.
 local _, Addon = ...
 local T = Addon.Tooltip
 local normal, muted = {0.92,0.91,0.86}, {0.61,0.70,0.73}

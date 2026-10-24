@@ -1,0 +1,58 @@
+name: Test and package SpellClarity
+
+on:
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Test and build standalone addon
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v6.3.0
+        with:
+          python-version: '3.12'
+      - name: Install Lua 5.1 for the addon checks
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes lua5.1
+      - name: Validate source, addons and release bundle
+        run: python dev/ci.py
+      - name: Retain verified ZIP and checksums
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: spellclarity-${{ github.sha }}-${{ github.run_attempt }}
+          path: |
+            dist/release/*.zip
+            dist/release/build.json
+            dist/release/SHA256SUMS
+          if-no-files-found: error
+          retention-days: 30
+
+  verify-transfer:
+    name: Verify downloaded bundle
+    needs: validate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6.3.0
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v7.0.0
+        with:
+          name: spellclarity-${{ github.sha }}-${{ github.run_attempt }}
+          path: dist/release
+      - run: python dev/release.py --verify

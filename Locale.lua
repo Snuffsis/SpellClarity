@@ -1,4 +1,4 @@
--- Exported by dev/build_spellclarity.py; update the maintained source first.
+-- Imported from Aevum; maintained independently here. See UPSTREAM.md.
 local _, Addon = ...
 Addon.svSE = {
     ["Teleport"] = "Teleportering",

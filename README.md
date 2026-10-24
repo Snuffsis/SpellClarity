@@ -1,63 +1,49 @@
 # SpellClarity
 
-Ett fristående addon för World of Warcraft Classic beta / Forever-klienten
-(Interface 16001). Version 0.1.0-beta. Kräver inga andra addons och innehåller
-egna språksträngar, spell-data och beräkningar.
+Clearer equipment bonuses and spell calculations in your original tooltips.
 
-- Korta, kända Equip-bonusar: exempelvis `+19 Fire spell dmg` och `+24 Ranged attack power`.
-- Kombinerad spell damage/healing delas i två rader, med respektive eget värde.
-- Jämförelser använder samma korta spell-etiketter och behåller tal, tecken och färgkoder.
-- Håll Shift över en inlärd spell/ability för grundvärden, bonusbidrag och tillgängliga beräkningar.
-- Behåller spelets tooltipram, typsnitt och native färger. Inga skins, föremålsräknare, musföljning eller nya inställningspaneler.
+SpellClarity is a lightweight, independent addon for the Classic beta / Forever
+client. It keeps the game's tooltip frames, fonts and colors while making known
+equipment bonuses easier to read.
 
-## Installation
+- Compact known equipment bonuses, including school damage and attack power.
+- Separate spell damage and healing lines and clear comparison labels.
+- Hold Shift over learned spells for supported base values, bonus contributions,
+  coefficients and calculated estimates.
+- Damage, healing, periodic effects, absorbs and supported weapon components.
+- English labels by default; optional Swedish labels with `/spellclarity sv`.
+- No required addons. Your language choice is saved independently.
 
-Packa upp `SpellClarity` direkt i klientens `Interface/AddOns`, så att
-`Interface/AddOns/SpellClarity/SpellClarity.toc` finns. Starta om WoW helt när
-den nya mappen har lagts till och aktivera SpellClarity i addonlistan.
-Aevum behöver inte vara installerat eller aktiverat.
+The included spell data targets **1.60.1.70338**. Other builds receive an update
+notice instead of numerical estimates. Calculations are estimates before talents,
+criticals and target effects. Unknown/conditional equipment descriptions stay
+unchanged. English equipment descriptions are supported; Swedish changes labels.
 
-Om Aevum Tooltips är laddat pausar SpellClarity sig självt för att undvika
-dubbla tilläggsrader. Stäng av **Aevum Tooltips** och ladda om för att
-använda SpellClarity. Övriga Aevum-paket kan vara aktiva.
+If Aevum Tooltips or its older ForeverUI/ForeverSkin versions are loaded,
+SpellClarity pauses to avoid duplicate additions. Disable that tooltip addon and
+reload to use SpellClarity; other Aevum addons may stay enabled.
 
-Engelska etiketter är standard. `/spellclarity sv` väljer svenska,
-`/spellclarity en` engelska. Kör `/reload` efter språkbyte.
-Språkvalet sparas i addonets egen `SpellClarityDB`.
+Install the SpellClarity folder directly under Interface/AddOns and fully restart
+the game for the first installation. Use `/spellclarity en` or `/spellclarity sv`
+then `/reload` to change labels.
 
-## Beräkningar och stöd
+## Development
 
-Spell-underlaget innehåller 6 372 poster för **1.60.1.70338**. En annan build
-får meddelande om uppdaterade klientdata i stället för numeriska uppskattningar.
-Utbyt inte bara buildnumret: formler och scalar-data behöver verifieras.
-`spell-data-sources.json` innehåller ursprung och kontrollsummor för datakällorna.
-
-Skada, healing, periodiska effekter och absorption visas separat när formeln
-stöds. Tickvärden är per tick. Vapenförmågor visar kända komponenter.
-Beräkningar är uppskattningar före talanger, crits och måleffekter, inte en
-exakt uppdelning av spellbeskrivningen eller en garanti för faktisk skada.
-Pet-/saknade formler får en förklaring och använder aldrig spelarens stats.
-
-Equip-förkortningar känner igen hela engelska formuleringar. Andra språk,
-okända/villkorade effekter, procs, inaktiva bonusar och skyddad information
-lämnas native. Svenska är ett val för addonets etiketter, ingen svensk WoW-klientparser.
-Shift-detaljer läggs efter befintligt innehåll och utelämnas om den sammanlagda
-tooltipen skulle överstiga 48 textrader.
-
-## Utveckling och verifiering
-
-Källan under `Standalone/SpellClarity` versionshanteras tillsammans med
-Aevum men den distribuerade mappen är helt självförsörjande.
-`dev/build_spellclarity.py` exporterar bara formatterare, spellmotor, scalar-data
-och relevanta översättningar. Runtime-adaptern och starten hör till SpellClarity.
+This is the independent SpellClarity repository. See [source provenance](UPSTREAM.md),
+[contributor rules](AGENTS.md), [architecture](Docs/Architecture.md),
+[Git workflow](Docs/GitWorkflow.md) and [releasing](Docs/Releasing.md).
+[Svensk dokumentation](README-sv.md).
 
 ```text
-python dev/build_spellclarity.py
-python dev/build_spellclarity.py --check --output dist/SpellClarity-0.1.0-beta.zip
-python dev/run_checks.py
+python -m pip install -r dev/requirements.txt
+python dev/update_manifest.py
+python dev/ci.py
 ```
 
-Automatiska tester laddar addonets faktiska TOC utan Aevum och kontrollerar
-bonusar, jämförelser, Shift, språk, felhantering och versionsspärr.
-Tester simulerar WoW; slutlig radbrytning, cooldown/strid, taint och flimmer
-behöver bekräftas i spel.
+Python 3.12 plus Lua 5.1 (or the optional pinned Lupa runtime) are used for local
+checks. CI runs Lua 5.1 directly. Tests exercise the actual independent TOC and
+packaged runtime. The ZIP, build report and SHA256SUMS are in `dist/release/`.
+
+The project is prepared for review, not publicly released. In-game acceptance,
+repository bootstrap, CurseForge project configuration and an owner-selected
+distribution license remain pending. No license grant is implied by this import.
