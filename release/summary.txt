@@ -1,1 +1,1 @@
-Compact equipment bonuses and Shift spell calculations in native tooltips. Independent, with English and Swedish labels.
+Clearer equipment tooltips and Shift spell details: see base values, spell power bonuses and coefficients while keeping the game's original look.

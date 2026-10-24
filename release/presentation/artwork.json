@@ -1,0 +1,24 @@
+{
+  "tool": "Built-in image_gen",
+  "created": "2026-10-24",
+  "status": "Prepared artwork; not yet owner-approved or published",
+  "assets": [
+    {
+      "file": "spellclarity-logo.png",
+      "width": 1254,
+      "height": 1254,
+      "alt": "Gold tooltip emblem with a cyan spell spark and two text lines on a dark blue background.",
+      "prompt": "Use case: logo-brand. Create a finished square project logo for SpellClarity, an independent World of Warcraft addon that clarifies native equipment tooltips and reveals spell power coefficients. Output one square 1024 by 1024 PNG, opaque background.\nDesign: a distinctive single emblem, a broad softly squared antique-gold tooltip outline with a short lower-left speech pointer; inside it, one elegant four-point cyan-white spell spark, and two short restrained golden horizontal strokes below it suggesting readable tooltip lines. The spark is the focus. Strong balanced silhouette, legible at small addon-list sizes. Frontal, flat layout with subtle finely crafted metal bevels, clean premium fantasy game identity. Restrained antique gold #C9A65A, cool cyan #91D8DF, ink navy #0C1727. Very dark blue square background with subtle depth. Large centered emblem with generous 14% margin, crisp edges. No text, no letters, no infinity symbol, no circular medallion, no weapons, no characters, no copied game logo, no tiny ornaments, no excessive particles, no mockup or presentation sheet. Deliver only the final standalone square logo.",
+      "role": "Square project logo"
+    },
+    {
+      "file": "spellclarity-banner.png",
+      "width": 2172,
+      "height": 724,
+      "alt": "SpellClarity in gold lettering beside its gold tooltip and cyan spell-spark emblem on a dark blue background.",
+      "prompt": "Use case: logo-brand. Generate the finished horizontal banner for SpellClarity using the attached logo as the identity reference. This is a matching companion asset, not a collage or a mockup. Very wide banner, target aspect ratio 3:1. Composition: exact same gold tooltip outline, cyan four-point spell spark and two gold lines from the reference, smaller as one complete emblem on the left third; large beautifully typeset wordmark on the right reading exactly \"SpellClarity\" (S and C capitals, no space). Elegant restrained fantasy serif wordmark in warm pale gold, clear and readable. No other text. Preserve the supplied emblem's identity, proportions, recognizable silhouette and crafted metal treatment. Continuous dark ink-navy background across the whole banner, a subtle restrained cyan aura near the emblem, gentle depth, generous margins. Balance emblem and wordmark horizontally, centered vertically. Premium polished fantasy addon brand, deliberately uncluttered. No infinity logo, no characters or scenery, no fake UI screenshots, no ornament filling the margins, no watermark. The banner must be complete edge-to-edge landscape artwork.",
+      "reference": "spellclarity-logo.png",
+      "role": "Horizontal project banner"
+    }
+  ]
+}
